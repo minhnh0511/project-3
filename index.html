@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- -------------------Category------------------- -->
+    <h2>Danh mục sản phẩm</h2>
+    <div id="category" class="category__list"></div>
+    <!-- -------------------End Category------------------- -->
+
+
+    <!-- --------------------------------------------------------- -->
+
+
+    <!-- -------------------Products------------------- -->
+    <h2>Danh sách sản phẩm</h2>
+
+    <!-- Search -->
+    <div class="search" id="search">
+        <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+        <button>Tìm kiếm</button>
+    </div>
+    <!-- End Search -->
+
+    <!-- Filter -->
+    <select class="filter" id="filter">
+        <option value="default">
+            Mặc định
+        </option>
+        <option value="ascPrice">
+            Giá thấp đến cao
+        </option>
+        <option value="descPrice">
+            Giá cao đến thấp
+        </option>
+        <option value="descDiscount">
+            Giảm giá nhiều
+        </option>
+    </select>
+    <!-- End Filter -->
+
+    <!-- List -->
+    <div id="products" class="products__list">
+    </div>
+    <!-- End List -->
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination">
+        <span class="pagination__button pagination--prev" id="pagination--prev">
+            Prev
+        </span>
+        <span class="pagination--number" id="pagination--number">
+            1
+        </span>
+        <span class="pagination__button pagination--next" id="pagination--next">
+            Next
+        </span>
+    </div>
+    <!-- End Pagination -->
+    <!-- -------------------End Products------------------- -->
+
+
+    <script type="module" src="js/category.js"></script>
+    <script type="module" src="js/products.js"></script>
+</body>
+
+</html>
